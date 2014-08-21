@@ -1,0 +1,88 @@
+#rank{
+    position: absolute;
+    bottom: 337px;
+}
+#skills-list{
+    padding-top:22px;
+    padding-bottom: 50px;
+}
+.listItem{
+    padding: 10px;
+    font-size: larger;
+}
+.cBar{
+    bottom: 306px;
+    visibility: visible;
+}
+.javaBar{
+    bottom:262px;
+    visibility: visible;
+}
+.sqlBar{
+    bottom:218px;
+    visibility: visible;
+}
+.jsBar{
+     bottom:174px;
+    visibility: visible;
+}
+.jqueryBar{
+     bottom:218px;
+    visibility: visible;
+}
+.htmlBar{
+     bottom:174px;
+    visibility: visible;
+}
+.unityBar{
+     bottom:130px;
+    visibility: visible;
+}
+.iOSBar{
+     bottom:86px;
+    visibility: visible;
+}
+.cssBar{
+    bottom: 42px;
+    visibility:visible;
+}
+.cBarS{
+    width:55%;
+}
+.javaBarS{
+     width:60%;
+}
+.sqlBarS{
+    width:50%;
+}
+.jsBarS{
+     width:80%;
+}
+.jqueryBarS{
+     width:70%;
+}
+.htmlBarS{
+     width:90%;
+}
+.unityBarS{
+     width:60%;
+}
+.iOSBarS{
+    width:40%;
+}
+.cssBarS{
+    width:90%;
+}
+
+.progress{
+    width: 74%;
+    position: absolute;
+    left: 230px;
+    //visibility:hidden;
+   background: rgba(106, 203, 221, 0.24);
+}
+#bars {
+    position: relative;
+top: 50px;
+left: -80px;
+}
