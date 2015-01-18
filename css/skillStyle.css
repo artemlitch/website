@@ -5,6 +5,8 @@
 #skills-list{
     padding-top:22px;
     padding-bottom: 50px;
+    margin-left: 9em;
+margin-right: 3em;
 }
 .listItem{
     padding: 10px;
@@ -56,7 +58,7 @@
     width:50%;
 }
 .jsBarS{
-     width:80%;
+     width:69%;
 }
 .jqueryBarS{
      width:70%;
@@ -71,7 +73,7 @@
     width:40%;
 }
 .cssBarS{
-    width:90%;
+    width:80%;
 }
 
 .progress{

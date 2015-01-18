@@ -1,23 +1,49 @@
-#exp-btn,#skills-btn,#projects-btn,#about-me-btn{
+.squareBtn{
     width: 200px;
-    height: 300px;
+    height: 100px;
     background: rgba(9, 170, 116, 0);
     font-size: xx-large;   
-    border-color: rgba(9, 170, 116, 0.5);
-    border: 0px;
-    -webkit-box-shadow: inset 0 0px 0 rgba(255,255,255,.15),0 0px 0px rgba(0,0,0,.075);
-    box-shadow: inset 0 0px 0 rgba(255,255,255,.15),0 0px 0px rgba(0,0,0,.075);
+    border: 2px;
+    border-style: groove;
+    border-color: rgba(68, 255, 218, 0.7);
+   
 }
+.buttonAnimate{
+      -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards;
+    -webkit-animation: headerEnter 1.5s; /* Chrome, Safari, Opera */
+    animation: headerEnter 1.5s;
 
-#skills-btn:hover,#exp-btn:hover,#about-me-btn:hover,#projects-btn:hover{
+}
+.squareBtn:hover{
     background: rgba(25, 243, 170, 0.86)!important;
-    height: 300px;
+   // height: 300px;
     -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
     animation-fill-mode: forwards;
     -webkit-animation: navButtonHover 0.6s; /* Chrome, Safari, Opera */
     animation: navButtonHover 0.6s;
 
 }
+/* Chrome, Safari, Opera */
+@-webkit-keyframes navButtonHover {
+    from { 
+        background: rgba(9, 170, 116, 0);
+    }
+    to  {
+        background: rgba(25, 243, 170, 0.86);
+    }
+}
+
+/* Standard syntax */
+@keyframes navButtonHover {
+   from { 
+        background: rgba(9, 170, 116, 0);
+    }
+    to  {
+        background: rgba(25, 243, 170, 0.86);
+    }
+}
+
 #go-top-btn{
     position: fixed;
     bottom: 20px;
@@ -42,10 +68,10 @@
 }
 
 #headicon{    
-    position: absolute;
-    top: 88px;
+ //   position: absolute;
+  //  top: 88px;
     font-size: -webkit-xxx-large;
-    left: 76px;
+   // left: 76px;
 }
 #toolicon{
    position: absolute;
@@ -273,3 +299,74 @@ left: 83px;
     from { opacity: 0;}
     to {opacity:1}
 }
+
+
+.round-button {
+    display:inline;
+    width:150px;
+    height:150px;
+    border: 1px solid #f5f5f5;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-align:center;
+    background: rgba(70, 70, 16, 0);
+    box-shadow: 0 0 3px gray;
+    font-size:20px;
+}
+.round-button-in{
+   display: inline;
+    width: 151px;
+    height: 151px;
+    line-height: 50px;
+    border: 1px solid #f5f5f5;
+    border-radius: 50%;
+    color: #f5f5f5;
+    text-align: center;
+    text-decoration: none;
+    background: rgba(70, 70, 70, 0);
+    box-shadow: 0 0 3px gray;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: -8px;
+    top: -4px;
+}
+.round-button:hover {
+    background: rgba(25, 243, 170, 0.86);
+    //transform: rotateY(180deg);
+     -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards;
+    -webkit-animation: navButtonHover 0.3s; /* Chrome, Safari, Opera */
+    animation: navButtonHover 0.3s;
+     
+}
+
+@-webkit-keyframes coinFlip{
+    0% { 
+        transform: rotateY(0deg);
+        background:rgba(24, 235, 142, 0);         
+    }
+    50% {    
+         transform: rotateY(90deg);
+         background:rgba(24, 235, 142, 0);         
+    }
+    100%{
+        transform: rotateY(180deg);
+        background:rgba(24, 235, 142, 0.66);
+    }
+}
+@keyframes coinFlip {
+    0% { 
+         transform: rotateY(0deg);
+        background:rgba(24, 235, 142, 0);
+    }
+    50% {    
+         transform: rotateY(90deg);
+        background:rgba(24, 235, 142, 0); 
+    }
+    100%{
+         transform: rotateY(180deg);
+         background:rgba(24, 235, 142, 0.66);
+    }
+}    
+

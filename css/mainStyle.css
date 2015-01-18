@@ -1,56 +1,86 @@
 #bodyStyle{
-	background-color : rgb(68, 110, 146);
+  //background-color : rgb(68, 110, 146);
 }
 .container {
-width: 1000px;
+width: 100%;
 }
 
+
+h1{
+    font-size:54px;
+    
+}
 h2{
     font-size:100px;
     text-align: center;
+    color: rgb(78, 173, 177);
 }  
 #headerName{
-    color: #FFF;
     text-align: center;
-   // width: 500px;
-   // position: relative;
-   // left: 28%;
+    position: relative;
+    top: 180px;
+     -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards;
+    -webkit-animation: headerEnter 1.5s; /* Chrome, Safari, Opera */
+    animation: headerEnter 1.5s;
+
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes headerEnter {
+    from { 
+        opacity:0;
+        top:200px;
+    }
+    to  {
+        opacity:1;
+        top:180px;
+    }
+}
+
+/* Standard syntax */
+@keyframes headerEnter {
+    from { 
+        opacity:0;
+        top:200px;
+    }
+    to  {
+        opacity:1;
+        top:180px;
+    }
 }
 #nav-buttons{
-    left: 10%;
-    position: relative;
+
 }
 #nav{
-  //  top: 46px;
-  //  position: relative;
-    //margin-bottom: 5em;
-    margin-top: 5em;
-    background-color: rgba(52, 175, 223, 0.36);
+    padding-bottom: 79px;
+    padding-top: 310px;    
+    display: block;
+    -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards;
+    -webkit-animation: fadeIn 1.5s; /* Chrome, Safari, Opera */
+    animation: fadeIn 1.5s;
+
 }
 #navSection{
-    margin-bottom: 2em;
+}
+#navBackground{
+    background: url('back5.jpg') no-repeat center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 100%;
+    border-width: 0px;
+    background-size: 100% auto;
+    
 }
 #aboutMe-section, #skills-section, #proj-section,#exp-section{
     margin-bottom: 6em;
 }
-/* Chrome, Safari, Opera */
-@-webkit-keyframes navButtonHover {
-    from { background: rgba(9, 170, 116, 0.86);
-     height: 300px;}
-    to  {background: rgba(25, 243, 170, 0.86);
-     height: 300px;}
-}
 
-/* Standard syntax */
-@keyframes navButtonHover {
-    from { background: rgba(9, 170, 116, 0.86);
-     height: 300px;}
-    to  {background: rgba(25, 243, 170, 0.86);
-     height: 300px;}
-}
 #textBody{
     background: #fff;
-    width: 970px;
+    height: 100%;
+
 }
 .descSection{
      background-color: #fff;
@@ -111,9 +141,6 @@ h2{
 }
 
 
-.col-md-4 {
-    width: 20% !important;
-}
 
 h3,#exp-section  h4,h5,#exp-section  p{
  text-align: center;
@@ -130,8 +157,8 @@ hr {
 }
 p {
     margin: 0 0 10px;
-margin-left: 73px;
-margin-right: 73px;
+margin-left: 10%;
+margin-right: 10%;
 text-align: center;
 }
 
